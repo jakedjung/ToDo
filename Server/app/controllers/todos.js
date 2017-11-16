@@ -2,14 +2,17 @@ var express = require('express'),
     router = express.Router(),
     logger = require('../../config/logger'),
     mongoose = require('mongoose'),
-    User = mongoose.model('User');
+    ToDo = require('../../../Client/src/resources/data/todos');
     module.exports = function (app, config) {
     app.use('/api', router);
-    
-    
-    router.route('/users').get(function(req, res, next){
+
+
+//CHANGE ALL REFRENCES TO USER TO TODO!!!   
+
+//This also needs some more serious changing DO THAT!!!   
+    router.route('/todos').get(function(req, res, next){
 		logger.log('Get all ToDos', 'verbose');
-            var query = User.find()
+            var query = ToDo.find()
               .sort(req.query.order)
               .exec()
               .then(result => {
@@ -25,10 +28,10 @@ var express = require('express'),
           });
       
 
-    router.post('/users', function (req, res, next) {
+    router.post('/todos', function (req, res, next) {
          logger.log('Create ToDo', 'verbose');
-        var user = new User(req.body);
-        user.save()
+        var todo = new ToDo(req.body);
+        todo.save()
         .then(result => {
             res.status(201).json(result);
         })
@@ -38,16 +41,16 @@ var express = require('express'),
       
     });
 
-    router.route('/users').post(function(req, res, next){
+    router.route('/todos').post(function(req, res, next){
 		logger.log('Create ToDo', 'verbose');
-        res.status(201).json({messge: "Create user"});
+        res.status(201).json({messge: "Create todo"});
     });
 
-    router.route('/users').put(function(req, res, next){
+    router.route('/todos').put(function(req, res, next){
 		logger.log('Update ToDo', 'verbose');
-        User.findOneAndUpdate({_id: req.params.userId},	req.body, {new:true, multi:false})
-                .then(user => {
-                    res.status(200).json(user);
+        ToDo.findOneAndUpdate({_id: req.params.userId},	req.body, {new:true, multi:false})
+                .then(todo => {
+                    res.status(200).json(todo);
                 })
                 .catch(error => {
                     return next(error);
@@ -55,15 +58,15 @@ var express = require('express'),
         
     });
 
-    router.route('/users/password/userId').put(function(req, res, next){
-		logger.log('Update user password' + req.params.userId, 'verbose');
-        res.status(200).json({messge: 'Update user password' + req.params.userId});
+    router.route('/todos/password/userId').put(function(req, res, next){
+		logger.log('Update todo password' + req.params.userId, 'verbose');
+        res.status(200).json({messge: 'Update todo password' + req.params.userId});
     });
 
-    router.route('/users/:userId').get(function(req, res, next){
+    router.route('/todos/:userId').get(function(req, res, next){
 		logger.log('Delete ToDo ' + req.param.userId, 'verbose');
-        User.remove({ _id: req.params.userId })
-                .then(user => {
+        ToDo.remove({ _id: req.params.userId })
+                .then(todo => {
                     res.status(200).json({msg: "ToDo Deleted"});
                 })
                 .catch(error => {

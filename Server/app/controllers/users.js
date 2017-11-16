@@ -102,8 +102,5 @@ var express = require('express'),
             .catch(function (err) {
                 return next(err);
             });
-    });
-    
-  });
-
-};
+         });
+    };
