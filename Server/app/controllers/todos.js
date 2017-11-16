@@ -10,13 +10,13 @@ var express = require('express'),
 //CHANGE ALL REFRENCES TO USER TO TODO!!!   
 
 //This also needs some more serious changing DO THAT!!!   
-    router.route('/todos').get(function(req, res, next){
-		logger.log('Get all ToDos', 'verbose');
-            var query = ToDo.find()
+    router.route('/todos/user/:userId').get(function(req, res, next){
+		logger.log('Get all todos', 'verbose');
+            var query = todo.find({user: req.params.userId})
               .sort(req.query.order)
               .exec()
               .then(result => {
-                   if(result && result.length) {
+                if(result && result.length) {
                   res.status(200).json(result);
               } else {
                   res.status(404).json({message: 'No ToDos'});
