@@ -1,16 +1,18 @@
 var passport = require('passport'),
 jwt = require('jsonwebtoken'),
-User = require('../app/models/users'),
 config = require('./config'),
 jwtStrategy = require('passport-jwt').Strategy,
 extractJwt = require('passport-jwt').ExtractJwt,
 localStrategy = require('passport-local');
+
+var User = require('../app/models/users');
 
 var localOptions = {
      usernameField: 'email' 
     };
 
 var localLogin = new localStrategy(localOptions, function(email, password, next){
+  console.log(User)
 	User.findOne({email: email}).exec()
 	.then(function(user){ 
 	     if(!user){

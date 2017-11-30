@@ -5,7 +5,7 @@ import {AuthService} from 'aurelia-auth';
 
 @inject(Router, Users, AuthService)
 export class Home {
-	constructor(router, auth){
+	constructor(router,users, auth){
         this.router = router;
         this.auth = auth;
         this.loginError = '';    
@@ -14,8 +14,7 @@ export class Home {
         this.showLogin = true;
         
     }
-    //login function
-    //triggered by button in home.html
+
 
     login() {
         return this.auth.login(this.email, this.password)

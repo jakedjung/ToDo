@@ -1,14 +1,15 @@
 var express = require('express'),
     router = express.Router(),
     logger = require('../../config/logger'),
-    mongoose = require('mongoose'),
-    ToDo = require('../../../Client/src/resources/data/todos');
+    ToDo = require('../models/todos'),
+    multer = require('multer'),
+    mkdirp = require('mkdirp'),
+    passport = require('passport');
+
+
     module.exports = function (app, config) {
     app.use('/api', router);
-    multer = require('multer'),
-    mkdirp = require('mkdirp');
-    
-
+  
 
 //CHANGE ALL REFRENCES TO USER TO TODO!!!   
 
