@@ -6,7 +6,6 @@ export class Users {
 
 constructor(data) {
         this.data = data;
-
         this.USER_SERVICE = 'users';
     }
     //async and await stops until response is recieved 

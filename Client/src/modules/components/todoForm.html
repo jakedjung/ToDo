@@ -35,6 +35,26 @@
                 <small id="dueDateHelp" class="form-text text-muted">
             The date to ToDo is due.</small>
             </div>  
+        <div class="row">
+                <div class="col">
+                         <label class="btn btn-secondary">
+                                        Browse for files&hellip; <input type="file" 
+                                        style="display: none;" 
+                                        change.delegate="changeFiles()" files.bind="files">
+                        </label>
+                        <small id="fileHelp" class="form-text text-muted">
+                                       Upload any files that will be useful.</small>
+                        </div>	
+                        <div class="col-8">
+                                 <ul>
+                                         <li repeat.for="file of filesToUpload" class="list-group-item">
+                                                ${file.name}<span click.delegate="removeFile($index)" 
+                                                class="pull-right"><i class="fa fa-trash" aria-hidden="true">
+                                                </i></span></li>
+                                </ul>
+                        </div>
+                </div>
+
             <button click.trigger="saveTodo()" class="btn btn-primary topMargin">Save</button>
         </form>
     </template>
