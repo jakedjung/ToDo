@@ -18,3 +18,25 @@
 {"level":"info","message":"Loading Mongoose functionality","timestamp":"2017-11-30T02:10:57.670Z"}
 {"level":"info","message":"Loading models","timestamp":"2017-11-30T02:10:57.807Z"}
 {"level":"info","message":"Starting application","timestamp":"2017-11-30T02:10:58.508Z"}
+{"level":"info","message":"Loading Mongoose functionality","timestamp":"2017-11-30T02:12:15.952Z"}
+{"level":"info","message":"Loading models","timestamp":"2017-11-30T02:12:16.065Z"}
+{"level":"info","message":"Starting application","timestamp":"2017-11-30T02:12:16.709Z"}
+{"level":"error","message":"","timestamp":"2017-11-30T02:12:20.856Z"}
+{"level":"error","message":"","timestamp":"2017-11-30T02:12:57.731Z"}
+{"level":"error","message":"","timestamp":"2017-11-30T02:12:59.743Z"}
+{"level":"error","message":"","timestamp":"2017-11-30T02:13:23.493Z"}
+{"level":"info","message":"Loading Mongoose functionality","timestamp":"2017-11-30T22:25:23.755Z"}
+{"level":"info","message":"Loading models","timestamp":"2017-11-30T22:25:23.892Z"}
+{"level":"info","message":"Starting application","timestamp":"2017-11-30T22:25:24.813Z"}
+{"level":"error","message":"","timestamp":"2017-11-30T22:26:17.742Z"}
+{"level":"info","message":"Loading Mongoose functionality","timestamp":"2017-11-30T22:50:28.926Z"}
+{"level":"info","message":"Loading models","timestamp":"2017-11-30T22:50:29.220Z"}
+{"level":"info","message":"Starting application","timestamp":"2017-11-30T22:50:30.097Z"}
+{"level":"error","message":"","timestamp":"2017-11-30T22:51:27.621Z"}
+{"level":"error","message":"","timestamp":"2017-11-30T22:57:48.026Z"}
+{"level":"error","message":"","timestamp":"2017-11-30T23:00:53.576Z"}
+{"level":"error","message":"","timestamp":"2017-11-30T23:03:36.793Z"}
+{"level":"error","message":"","timestamp":"2017-11-30T23:04:29.202Z"}
+{"level":"error","message":"","timestamp":"2017-11-30T23:09:59.085Z"}
+{"level":"verbose","message":"Create User","timestamp":"2017-11-30T23:12:39.533Z"}
+{"level":"verbose","message":"Create User","timestamp":"2017-11-30T23:14:14.803Z"}

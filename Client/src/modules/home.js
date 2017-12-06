@@ -49,8 +49,6 @@ export class Home {
               }
     }
         
-    save(){
-        this.showLogin = true
-    }
+    
     
 }

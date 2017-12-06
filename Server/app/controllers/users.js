@@ -66,7 +66,7 @@ var express = require('express'),
     });
 
     router.route('/users/:userId').get(function(req, res, next){
-		logger.log('Delete user ' + req.param.userId, 'verbose');
+		logger.log('Delete user' + req.param.userId, 'verbose');
         User.remove({ _id: req.params.userId })
                 .then(user => {
                     res.status(200).json({msg: "User Deleted"});

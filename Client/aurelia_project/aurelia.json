@@ -96,6 +96,18 @@
            },
            "moment",  
            "text"
+           ,
+           {
+             "name": "flatpickr",
+             "path": "../node_modules/flatpickr/dist",
+             "main": "flatpickr",
+             "resources": [
+               "flatpickr.css",
+               "themes/dark.css",
+               "themes/material_blue.css"
+             ]
+           }
+ 
         
         ]
       }
