@@ -12,7 +12,7 @@ export class List {
         this.user = JSON.parse(sessionStorage.getItem('user'));
 		this.showList = true;
 		this.showCompleted = false;		
-        priorities =['Low', 'Medium', 'High', 'Critical'];
+        this.priorities =['Low', 'Medium', 'High', 'Critical'];
     }
     
     async activate(){
@@ -24,7 +24,7 @@ export class List {
 			todo: "",
 			description: "",
 			dateDue: new Date(),
-			 userId: this.user._id,
+			 user: this.user._id,
 			 
 			priority: this.priorities[0]
 		}
@@ -53,7 +53,7 @@ export class List {
 		}
 	}
 	 deleteTodo(todo){
-		      his.todos.deleteTodo(todo._id);
+		      this.todos.deleteTodo(todo._id);
 		 }
 	completeTodo(todo){
 			  todo.completed = !todo.completed;
@@ -72,12 +72,11 @@ export class List {
 			  this.filesToUpload.splice(index,1);
 			}
 						
-
-    //logout function 
-    //triggers by click of logout button in list.html
     logout(){
-        sessionStorage.removeItem('user');
-        this.auth.logout();
-    }
+		this.router.navigate('home');
+	}
+	back(){
+		this.showList=true
+	}
     
 }

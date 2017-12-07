@@ -1,7 +1,8 @@
 var express = require('express'),
     router = express.Router(),
     logger = require('../../config/logger'),
-    ToDo = require('../models/todos'),
+    mongoose = require('mongoose'),
+    ToDo = mongoose.model('Todo'),
     multer = require('multer'),
     mkdirp = require('mkdirp'),
     passport = require('passport');
@@ -10,13 +11,12 @@ var express = require('express'),
     module.exports = function (app, config) {
     app.use('/api', router);
   
-
-//CHANGE ALL REFRENCES TO USER TO TODO!!!   
+ 
 
 //This also needs some more serious changing DO THAT!!!   
     router.route('/todos/user/:userId').get(function(req, res, next){
 		logger.log('Get all todos', 'verbose');
-            var query = todo.find({user: req.params.userId})
+            var query = ToDo.find({user: req.params.userId})
               .sort(req.query.order)
               .exec()
               .then(result => {
@@ -45,14 +45,11 @@ var express = require('express'),
       
     });
 
-    router.route('/todos').post(function(req, res, next){
-		logger.log('Create ToDo', 'verbose');
-        res.status(201).json({messge: "Create todo"});
-    });
-
-    router.route('/todos').put(function(req, res, next){
+ 
+  
+    router.route('/todos/:todoId').put(function(req, res, next){
 		logger.log('Update ToDo', 'verbose');
-        ToDo.findOneAndUpdate({_id: req.params.userId},	req.body, {new:true, multi:false})
+        ToDo.findOneAndUpdate({_id: req.params.todoId},	req.body, {new:true, multi:false})
                 .then(todo => {
                     res.status(200).json(todo);
                 })
@@ -110,7 +107,7 @@ var express = require('express'),
   router.post('/todos/upload/:userId/:todoId', upload.any(), function(req, res, next){
         logger.log('Upload file for todo ' + req.params.todoId + ' and ' + req.params.userId, 'verbose');
         
-        Todo.findById(req.params.todoId, function(err, todo){
+        ToDo.findById(req.params.todoId, function(err, todo){
             if(err){ 
                 return next(err);
             } else {     

@@ -6,7 +6,7 @@ export class ToDos {
  
     constructor(data) {
         		this.data = data;
-        		this.TODO_SERVICE = 'todos'; //mayneed to edit this to match file names
+        		this.TODO_SERVICE = 'todos'; 
                 this.todosArray = []
    		 }
 
@@ -19,11 +19,20 @@ export class ToDos {
 
         async save(todo){
                 if(todo){
-                    let serverResponse = await this.data.post(todo, this.TODO_SERVICE);
-                    if(! serverResponse.error){
-                    this.todosArray.push(serverResponse);
-                     }
-                    return serverResponse;
+                if(!todo._id){
+                    let serverResponse = await this.data.post(todo, this.TODO_SERVICE);
+                            if(! serverResponse.error){
+                            this.todosArray.push(serverResponse);
+                             }
+                            return serverResponse;
+                } else {
+                    let serverResponse = await this.data.put(todo, this.TODO_SERVICE + "/" + todo._id);
+                            if(! serverResponse.error){
+                            
+                             }
+                            return serverResponse;
+                }
+                    
                 }
             }
             
