@@ -64,8 +64,8 @@ var express = require('express'),
         res.status(200).json({messge: 'Update todo password' + req.params.userId});
     });
 
-    router.route('/todos/:userId').get(function(req, res, next){
-		logger.log('Delete ToDo ' + req.param.userId, 'verbose');
+    router.route('/todos/:userId').delete(function(req, res, next){
+		logger.log('Delete ToDo' + req.param.userId, 'verbose');
         ToDo.remove({ _id: req.params.userId })
                 .then(todo => {
                     res.status(200).json({msg: "ToDo Deleted"});

@@ -52,7 +52,7 @@ export class List {
 			this.showList = true;
 		}
 	}
-	 deleteTodo(todo){
+	deleteTodo(todo){
 		      this.todos.deleteTodo(todo._id);
 		 }
 	completeTodo(todo){

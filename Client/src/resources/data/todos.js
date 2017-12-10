@@ -46,7 +46,7 @@ export class ToDos {
                 }
                 
             async deleteTodo(id){
-                let response = await this.data.delete(this.TODOS_SERVICE + "/" + id);
+                let response = await this.data.delete(this.TODO_SERVICE + "/" + id);
                 if(!response.error){
                     for(let i = 0; i < this.todosArray.length; i++){
                         if(this.todosArray[i]._id === id){
