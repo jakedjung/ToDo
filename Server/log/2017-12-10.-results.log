@@ -4,3 +4,126 @@
 {"level":"info","message":"Loading Mongoose functionality","timestamp":"2017-12-10T18:28:04.986Z"}
 {"level":"info","message":"Loading models","timestamp":"2017-12-10T18:28:05.131Z"}
 {"level":"info","message":"Starting application","timestamp":"2017-12-10T18:28:05.667Z"}
+{"level":"info","message":"Loading Mongoose functionality","timestamp":"2017-12-10T18:28:59.971Z"}
+{"level":"info","message":"Loading models","timestamp":"2017-12-10T18:29:00.092Z"}
+{"level":"info","message":"Starting application","timestamp":"2017-12-10T18:29:00.665Z"}
+{"level":"error","message":"","timestamp":"2017-12-10T18:31:52.580Z"}
+{"level":"error","message":"","timestamp":"2017-12-10T18:31:52.596Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-10T18:32:02.348Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:32:27.891Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:32:33.008Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:32:33.832Z"}
+{"level":"verbose","message":"Create User","timestamp":"2017-12-10T18:38:52.700Z"}
+{"level":"error","message":"ValidationError: User validation failed: email: Path `email` is required., lastName: Path `lastName` is required., firstName: Path `firstName` is required.\n    at MongooseError.ValidationError (D:\\Project\\ToDo\\Server\\node_modules\\mongoose\\lib\\error\\validation.js:28:11)\n    at model.Document.invalidate (D:\\Project\\ToDo\\Server\\node_modules\\mongoose\\lib\\document.js:1636:32)\n    at D:\\Project\\ToDo\\Server\\node_modules\\mongoose\\lib\\document.js:1508:17\n    at validate (D:\\Project\\ToDo\\Server\\node_modules\\mongoose\\lib\\schematype.js:779:7)\n    at D:\\Project\\ToDo\\Server\\node_modules\\mongoose\\lib\\schematype.js:824:11\n    at Array.forEach (native)\n    at SchemaString.SchemaType.doValidate (D:\\Project\\ToDo\\Server\\node_modules\\mongoose\\lib\\schematype.js:784:19)\n    at D:\\Project\\ToDo\\Server\\node_modules\\mongoose\\lib\\document.js:1506:9\n    at _combinedTickCallback (internal/process/next_tick.js:73:7)\n    at process._tickCallback (internal/process/next_tick.js:104:9)","timestamp":"2017-12-10T18:38:52.739Z"}
+{"level":"verbose","message":"Create User","timestamp":"2017-12-10T18:39:19.962Z"}
+{"level":"error","message":"MongoError: E11000 duplicate key error collection: todo-dev.users index: email_1 dup key: { : \"zjung@uwm.edu\" }\n    at Function.MongoError.create (D:\\Project\\ToDo\\Server\\node_modules\\mongodb-core\\lib\\error.js:31:11)\n    at toError (D:\\Project\\ToDo\\Server\\node_modules\\mongodb\\lib\\utils.js:139:22)\n    at D:\\Project\\ToDo\\Server\\node_modules\\mongodb\\lib\\collection.js:668:23\n    at handleCallback (D:\\Project\\ToDo\\Server\\node_modules\\mongodb\\lib\\utils.js:120:56)\n    at D:\\Project\\ToDo\\Server\\node_modules\\mongodb\\lib\\bulk\\unordered.js:465:9\n    at handleCallback (D:\\Project\\ToDo\\Server\\node_modules\\mongodb\\lib\\utils.js:120:56)\n    at resultHandler (D:\\Project\\ToDo\\Server\\node_modules\\mongodb\\lib\\bulk\\unordered.js:413:5)\n    at D:\\Project\\ToDo\\Server\\node_modules\\mongodb-core\\lib\\connection\\pool.js:469:18\n    at _combinedTickCallback (internal/process/next_tick.js:73:7)\n    at process._tickCallback (internal/process/next_tick.js:104:9)","timestamp":"2017-12-10T18:39:20.833Z"}
+{"level":"error","message":"","timestamp":"2017-12-10T18:39:30.425Z"}
+{"level":"verbose","message":"Create User","timestamp":"2017-12-10T18:39:43.971Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-10T18:39:52.960Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-10T18:41:06.093Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:41:16.269Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:41:16.950Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:41:17.662Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:41:17.825Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:42:04.722Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:42:05.058Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:42:05.392Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:42:05.541Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:42:05.705Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:42:05.852Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:42:06.021Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:42:06.189Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:42:06.334Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:42:06.499Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:42:06.650Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:42:06.819Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:42:06.969Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:42:07.138Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:42:07.298Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:42:07.453Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:42:07.617Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:42:07.733Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:42:08.276Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:42:14.719Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:42:15.041Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:42:15.377Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:42:15.595Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:42:15.875Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:42:16.291Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:42:16.564Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:42:17.584Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:42:17.936Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-10T18:51:53.110Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-10T18:56:20.816Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-10T18:58:32.084Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:58:51.321Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:58:52.061Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:58:54.877Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:58:55.549Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:58:59.188Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:59:07.743Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:59:08.305Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:59:09.139Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T18:59:10.118Z"}
+{"level":"verbose","message":"Create ToDo","timestamp":"2017-12-10T19:00:45.439Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:00:53.498Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:01:32.298Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:01:32.623Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:01:32.955Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:01:33.109Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:01:33.375Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:01:33.807Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:01:34.930Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:01:35.685Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:01:35.971Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:01:36.147Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:01:36.490Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:01:36.867Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:01:37.661Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:01:38.045Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:01:38.507Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:01:38.682Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:01:39.162Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:01:39.334Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:01:39.774Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:01:40.335Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:02:31.792Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:02:32.771Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:02:33.139Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:02:33.492Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:02:33.694Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:02:44.507Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:02:45.204Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:02:45.700Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:02:49.897Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:02:50.381Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:02:54.372Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:02:54.646Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:02:55.014Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:02:58.913Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:03:04.288Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:03:05.120Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:03:05.697Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:03:06.267Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:03:07.078Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:05:24.867Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:05:25.758Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:06:29.423Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:06:36.241Z"}
+{"level":"verbose","message":"Create ToDo","timestamp":"2017-12-10T19:07:19.893Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:07:51.956Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-10T19:08:11.840Z"}
+{"level":"verbose","message":"Create User","timestamp":"2017-12-10T19:10:00.067Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-10T19:10:07.378Z"}
+{"level":"verbose","message":"Create ToDo","timestamp":"2017-12-10T19:10:55.412Z"}
+{"level":"verbose","message":"Upload file for todo 5a2d86bfe0338b2fd49f0b1c and 5a2d8688e0338b2fd49f0b1b","timestamp":"2017-12-10T19:10:55.558Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:10:59.649Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T19:11:00.314Z"}
+{"level":"verbose","message":"Create ToDo","timestamp":"2017-12-10T19:11:14.993Z"}
+{"level":"verbose","message":"Upload file for todo 5a2d86d2e0338b2fd49f0b1d and 5a2d8688e0338b2fd49f0b1b","timestamp":"2017-12-10T19:11:15.057Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-10T19:11:37.135Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-10T19:12:00.953Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-10T19:12:21.282Z"}
+{"level":"verbose","message":"Create ToDo","timestamp":"2017-12-10T19:12:50.858Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-10T19:13:02.678Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-10T19:14:34.223Z"}
