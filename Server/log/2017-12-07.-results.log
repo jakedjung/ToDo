@@ -312,3 +312,36 @@
 {"level":"verbose","message":"Create ToDo","timestamp":"2017-12-07T23:02:27.015Z"}
 {"level":"verbose","message":"Upload file for todo 5a29c8832977071ea8b2ab9f and 5a20906790074e08dc51b6a2","timestamp":"2017-12-07T23:02:27.085Z"}
 {"level":"error","message":"ReferenceError: Todo is not defined\n    at D:\\Project\\ToDo\\Server\\app\\controllers\\todos.js:110:9\n    at Layer.handle [as handle_request] (D:\\Project\\ToDo\\Server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\Project\\ToDo\\Server\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Immediate.<anonymous> (D:\\Project\\ToDo\\Server\\node_modules\\multer\\lib\\make-middleware.js:53:37)\n    at runCallback (timers.js:676:20)\n    at tryOnImmediate (timers.js:645:5)\n    at processImmediate [as _immediateCallback] (timers.js:617:5)","timestamp":"2017-12-07T23:02:27.088Z"}
+{"level":"info","message":"Loading Mongoose functionality","timestamp":"2017-12-07T23:03:19.313Z"}
+{"level":"info","message":"Loading models","timestamp":"2017-12-07T23:03:19.432Z"}
+{"level":"info","message":"Starting application","timestamp":"2017-12-07T23:03:19.964Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-07T23:03:38.100Z"}
+{"level":"verbose","message":"Upload file for todo 5a29c8832977071ea8b2ab9f and 5a20906790074e08dc51b6a2","timestamp":"2017-12-07T23:03:38.436Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-07T23:04:10.268Z"}
+{"level":"verbose","message":"Upload file for todo 5a29c8832977071ea8b2ab9f and 5a20906790074e08dc51b6a2","timestamp":"2017-12-07T23:04:10.393Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-07T23:04:23.539Z"}
+{"level":"verbose","message":"Upload file for todo 5a29c8832977071ea8b2ab9f and 5a20906790074e08dc51b6a2","timestamp":"2017-12-07T23:04:23.643Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-07T23:05:04.497Z"}
+{"level":"verbose","message":"Upload file for todo 5a29c7a42977071ea8b2ab9e and 5a20906790074e08dc51b6a2","timestamp":"2017-12-07T23:05:04.606Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-07T23:05:30.884Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-07T23:05:39.278Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-07T23:05:39.987Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-07T23:05:44.385Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-07T23:05:49.997Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-07T23:05:51.893Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-07T23:05:52.629Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-07T23:05:53.228Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-07T23:05:58.042Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-07T23:05:59.178Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-07T23:05:59.949Z"}
+{"level":"verbose","message":"Create User","timestamp":"2017-12-07T23:06:21.688Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-07T23:06:29.830Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-07T23:09:49.409Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-07T23:10:19.585Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-07T23:10:25.262Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-07T23:11:01.919Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-07T23:16:20.753Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-07T23:17:14.794Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-07T23:17:27.754Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-07T23:17:28.366Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-07T23:20:29.574Z"}

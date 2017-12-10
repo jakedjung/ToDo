@@ -48,6 +48,7 @@ export class Home {
                 this.registerError = "There was a problem registering the user."
               }
     }
+
         
     
     
