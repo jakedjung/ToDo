@@ -159,3 +159,50 @@
 {"level":"info","message":"Loading models","timestamp":"2017-12-10T19:48:38.247Z"}
 {"level":"info","message":"Starting application","timestamp":"2017-12-10T19:48:38.789Z"}
 {"level":"verbose","message":"Get all todos","timestamp":"2017-12-10T19:49:51.101Z"}
+{"level":"info","message":"Loading Mongoose functionality","timestamp":"2017-12-10T19:53:53.074Z"}
+{"level":"info","message":"Loading models","timestamp":"2017-12-10T19:53:53.288Z"}
+{"level":"info","message":"Starting application","timestamp":"2017-12-10T19:53:53.873Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-10T19:54:07.082Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-10T19:54:19.373Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T20:01:56.682Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-10T20:06:52.590Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-10T20:07:17.504Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T20:07:55.209Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-10T20:10:53.059Z"}
+{"level":"verbose","message":"Delete ToDoundefined","timestamp":"2017-12-10T20:11:05.161Z"}
+{"level":"verbose","message":"Delete ToDoundefined","timestamp":"2017-12-10T20:11:08.938Z"}
+{"level":"verbose","message":"Delete ToDoundefined","timestamp":"2017-12-10T20:11:10.816Z"}
+{"level":"verbose","message":"Delete ToDoundefined","timestamp":"2017-12-10T20:11:24.299Z"}
+{"level":"verbose","message":"Delete ToDoundefined","timestamp":"2017-12-10T20:11:25.244Z"}
+{"level":"verbose","message":"Delete ToDoundefined","timestamp":"2017-12-10T20:11:25.843Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-10T20:11:37.852Z"}
+{"level":"verbose","message":"Delete ToDoundefined","timestamp":"2017-12-10T20:11:45.815Z"}
+{"level":"verbose","message":"Delete ToDoundefined","timestamp":"2017-12-10T20:11:46.433Z"}
+{"level":"verbose","message":"Delete ToDoundefined","timestamp":"2017-12-10T20:11:47.357Z"}
+{"level":"verbose","message":"Create ToDo","timestamp":"2017-12-10T20:12:28.586Z"}
+{"level":"verbose","message":"Create ToDo","timestamp":"2017-12-10T20:12:52.495Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T20:13:16.096Z"}
+{"level":"verbose","message":"Create ToDo","timestamp":"2017-12-10T20:14:59.236Z"}
+{"level":"verbose","message":"Upload file for todo 5a2d95c306d0ed15b07c93ba and 5a20906790074e08dc51b6a2","timestamp":"2017-12-10T20:14:59.441Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T20:15:06.016Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T20:15:10.793Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-10T20:15:19.280Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-10T20:15:35.181Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T20:15:47.173Z"}
+{"level":"verbose","message":"Upload file for todo 5a2d95c306d0ed15b07c93ba and 5a20906790074e08dc51b6a2","timestamp":"2017-12-10T20:15:47.260Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-10T20:16:02.283Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-10T20:16:37.329Z"}
+{"level":"verbose","message":"Create ToDo","timestamp":"2017-12-10T20:18:11.616Z"}
+{"level":"verbose","message":"Upload file for todo 5a2d968306d0ed15b07c93bb and 5a20906790074e08dc51b6a2","timestamp":"2017-12-10T20:18:11.723Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-10T20:18:32.553Z"}
+{"level":"verbose","message":"Upload file for todo 5a2d968306d0ed15b07c93bb and 5a20906790074e08dc51b6a2","timestamp":"2017-12-10T20:18:32.628Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-10T20:19:07.624Z"}
+{"level":"verbose","message":"Delete ToDoundefined","timestamp":"2017-12-10T20:19:21.384Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-10T20:19:53.372Z"}
+{"level":"verbose","message":"Create ToDo","timestamp":"2017-12-10T20:20:37.078Z"}
+{"level":"verbose","message":"Upload file for todo 5a2d971506d0ed15b07c93bc and 5a20906790074e08dc51b6a2","timestamp":"2017-12-10T20:20:37.166Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-10T20:20:48.217Z"}
+{"level":"verbose","message":"Delete ToDoundefined","timestamp":"2017-12-10T20:20:52.957Z"}
+{"level":"verbose","message":"Create ToDo","timestamp":"2017-12-10T20:21:23.821Z"}
+{"level":"verbose","message":"Upload file for todo 5a2d974306d0ed15b07c93bd and 5a20906790074e08dc51b6a2","timestamp":"2017-12-10T20:21:23.966Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-10T20:21:32.447Z"}
