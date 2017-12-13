@@ -1,0 +1,35 @@
+{"level":"info","message":"Loading Mongoose functionality","timestamp":"2017-12-13T00:44:19.147Z"}
+{"level":"info","message":"Loading models","timestamp":"2017-12-13T00:44:19.364Z"}
+{"level":"info","message":"Starting application","timestamp":"2017-12-13T00:44:20.389Z"}
+{"level":"info","message":"Loading Mongoose functionality","timestamp":"2017-12-13T01:11:40.242Z"}
+{"level":"info","message":"Loading models","timestamp":"2017-12-13T01:11:40.287Z"}
+{"level":"info","message":"Starting application","timestamp":"2017-12-13T01:11:40.492Z"}
+{"level":"info","message":"Loading Mongoose functionality","timestamp":"2017-12-13T01:13:24.593Z"}
+{"level":"info","message":"Loading models","timestamp":"2017-12-13T01:13:24.637Z"}
+{"level":"info","message":"Starting application","timestamp":"2017-12-13T01:13:24.844Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-13T01:13:38.604Z"}
+{"level":"verbose","message":"Delete ToDoundefined","timestamp":"2017-12-13T01:13:57.506Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-13T01:14:00.671Z"}
+{"level":"verbose","message":"Update ToDo","timestamp":"2017-12-13T01:14:04.567Z"}
+{"level":"verbose","message":"Create ToDo","timestamp":"2017-12-13T01:14:20.234Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-13T01:14:35.153Z"}
+{"level":"verbose","message":"Delete ToDoundefined","timestamp":"2017-12-13T01:14:43.195Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-13T01:14:51.871Z"}
+{"level":"verbose","message":"Create ToDo","timestamp":"2017-12-13T01:15:46.111Z"}
+{"level":"verbose","message":"Create User","timestamp":"2017-12-13T01:16:12.986Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-13T01:16:21.507Z"}
+{"level":"verbose","message":"Delete ToDoundefined","timestamp":"2017-12-13T01:16:28.101Z"}
+{"level":"verbose","message":"Delete ToDoundefined","timestamp":"2017-12-13T01:16:29.108Z"}
+{"level":"verbose","message":"Delete ToDoundefined","timestamp":"2017-12-13T01:16:32.022Z"}
+{"level":"verbose","message":"Delete ToDoundefined","timestamp":"2017-12-13T01:16:32.506Z"}
+{"level":"verbose","message":"Delete ToDoundefined","timestamp":"2017-12-13T01:16:33.141Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-13T01:17:15.469Z"}
+{"level":"verbose","message":"Create User","timestamp":"2017-12-13T01:17:58.475Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-13T01:18:16.557Z"}
+{"level":"info","message":"Loading Mongoose functionality","timestamp":"2017-12-13T19:53:12.357Z"}
+{"level":"info","message":"Loading models","timestamp":"2017-12-13T19:53:12.728Z"}
+{"level":"info","message":"Starting application","timestamp":"2017-12-13T19:53:14.663Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-13T19:56:20.712Z"}
+{"level":"info","message":"Loading Mongoose functionality","timestamp":"2017-12-13T22:39:18.200Z"}
+{"level":"info","message":"Loading models","timestamp":"2017-12-13T22:39:18.700Z"}
+{"level":"info","message":"Starting application","timestamp":"2017-12-13T22:39:20.728Z"}

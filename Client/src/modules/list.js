@@ -2,7 +2,7 @@ import {inject} from 'aurelia-framework';
 import {Router} from 'aurelia-router';
 import {ToDos} from '../resources/data/todos';
 
-//may have to update look ate home.js slide from aurelia authentication presentation
+
 @inject(ToDos, Router)
 export class List {
 	constructor(todos, router){

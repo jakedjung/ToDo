@@ -846,6 +846,75 @@ define('resources/data/users',['exports', 'aurelia-framework', './data-services'
         return Users;
     }()) || _class);
 });
+define('resources/value-converters/completed',["exports"], function (exports) {
+    "use strict";
+
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+
+    function _classCallCheck(instance, Constructor) {
+        if (!(instance instanceof Constructor)) {
+            throw new TypeError("Cannot call a class as a function");
+        }
+    }
+
+    var CompletedValueConverter = exports.CompletedValueConverter = function () {
+        function CompletedValueConverter() {
+            _classCallCheck(this, CompletedValueConverter);
+        }
+
+        CompletedValueConverter.prototype.toView = function toView(array, value) {
+            if (!value) {
+                return array.filter(function (item) {
+                    return !item.completed;
+                });
+            } else {
+                return array;
+            }
+        };
+
+        return CompletedValueConverter;
+    }();
+});
+define('resources/value-converters/date-format',['exports', 'moment'], function (exports, _moment) {
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	exports.DateFormatValueConverter = undefined;
+
+	var _moment2 = _interopRequireDefault(_moment);
+
+	function _interopRequireDefault(obj) {
+		return obj && obj.__esModule ? obj : {
+			default: obj
+		};
+	}
+
+	function _classCallCheck(instance, Constructor) {
+		if (!(instance instanceof Constructor)) {
+			throw new TypeError("Cannot call a class as a function");
+		}
+	}
+
+	var DateFormatValueConverter = exports.DateFormatValueConverter = function () {
+		function DateFormatValueConverter() {
+			_classCallCheck(this, DateFormatValueConverter);
+		}
+
+		DateFormatValueConverter.prototype.toView = function toView(value) {
+			if (value === undefined || value === null) {
+				return;
+			}
+
+			return (0, _moment2.default)(value).format('MMM Do YYYY');
+		};
+
+		return DateFormatValueConverter;
+	}();
+});
 define('resources/elements/flatpickr',['exports', 'aurelia-framework', 'flatpickr'], function (exports, _aureliaFramework, _flatpickr) {
         'use strict';
 
@@ -957,82 +1026,13 @@ define('resources/elements/flatpickr',['exports', 'aurelia-framework', 'flatpick
                 initializer: null
         })), _class2)) || _class);
 });
-define('resources/value-converters/completed',["exports"], function (exports) {
-    "use strict";
-
-    Object.defineProperty(exports, "__esModule", {
-        value: true
-    });
-
-    function _classCallCheck(instance, Constructor) {
-        if (!(instance instanceof Constructor)) {
-            throw new TypeError("Cannot call a class as a function");
-        }
-    }
-
-    var CompletedValueConverter = exports.CompletedValueConverter = function () {
-        function CompletedValueConverter() {
-            _classCallCheck(this, CompletedValueConverter);
-        }
-
-        CompletedValueConverter.prototype.toView = function toView(array, value) {
-            if (!value) {
-                return array.filter(function (item) {
-                    return !item.completed;
-                });
-            } else {
-                return array;
-            }
-        };
-
-        return CompletedValueConverter;
-    }();
-});
-define('resources/value-converters/date-format',['exports', 'moment'], function (exports, _moment) {
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	exports.DateFormatValueConverter = undefined;
-
-	var _moment2 = _interopRequireDefault(_moment);
-
-	function _interopRequireDefault(obj) {
-		return obj && obj.__esModule ? obj : {
-			default: obj
-		};
-	}
-
-	function _classCallCheck(instance, Constructor) {
-		if (!(instance instanceof Constructor)) {
-			throw new TypeError("Cannot call a class as a function");
-		}
-	}
-
-	var DateFormatValueConverter = exports.DateFormatValueConverter = function () {
-		function DateFormatValueConverter() {
-			_classCallCheck(this, DateFormatValueConverter);
-		}
-
-		DateFormatValueConverter.prototype.toView = function toView(value) {
-			if (value === undefined || value === null) {
-				return;
-			}
-
-			return (0, _moment2.default)(value).format('MMM Do YYYY');
-		};
-
-		return DateFormatValueConverter;
-	}();
-});
 define('text!app.html', ['module'], function(module) { module.exports = "<template><require from=\"resources/css/styles.css\"></require><router-view></router-view></template>"; });
-define('text!resources/css/styles.css', ['module'], function(module) { module.exports = ".rightMargin {\r\n        margin-right: 10px;\r\n    }\r\n\r\n.topMargin {\r\n    margin-right: 10px\r\n}\r\n\r\n.leftMargin {\r\n    margin-left :10px\r\n}"; });
 define('text!modules/home.html', ['module'], function(module) { module.exports = "<template>    <h1>${message}</h1>    <compose show.bind=\"showLogin\" view=\"./components/login.html\"></compose>    <compose show.bind=\"!showLogin\" view=\"./components/register.html\"></compose></template>"; });
+define('text!resources/css/styles.css', ['module'], function(module) { module.exports = ".rightMargin {\r\n        margin-right: 10px;\r\n    }\r\n\r\n.topMargin {\r\n    margin-right: 10px\r\n}\r\n\r\n.leftMargin {\r\n    margin-left :10px\r\n}"; });
 define('text!modules/list.html', ['module'], function(module) { module.exports = "<template>    <h1>${message}</h1>    <compose show.bind=\"showList\" view=\"./components/todoList.html\"></compose>    <compose show.bind=\"!showList\" view=\"./components/todoForm.html\"></compose></template>"; });
 define('text!modules/components/login.html', ['module'], function(module) { module.exports = "<template>    <div id=\"errorMsg\" innerhtml.bind=\"loginError\"></div>    <label for=\"email\">Email</label>    <input value.bind=\"email\" type=\"email\" autofocus class=\"form-control\" id=\"email\" placeholder=\"Email\">    <label for=\"password\">Password</label>    <input value.bind=\"password\" type=\"password\" class=\"form-control\" id=\"password\" placeholder=\"Password\">    <button click.trigger=\"login()\">Login</button>       <span class=\"registerLink\" click.trigger=\"showRegister()\">Register</span></template>"; });
 define('text!modules/components/register.html', ['module'], function(module) { module.exports = "<template>First Name: <input value.bind=\"user.firstName\"> Last Name: <input value.bind=\"user.lastName\"> Email: <input value.bind=\"user.email\"> Password: <input value.bind=\"user.password\">     <button click.trigger=\"save()\">Save</button></template>"; });
 define('text!modules/components/todoForm.html', ['module'], function(module) { module.exports = "<template><div class=\"card topMargin\"><div class=\"card-body\"><span><i click.trigger=\"back()\" class=\"fa fa-arrow-left fa-lg\" aria-hidden=\"true\">Back</i></span></div></div><form><div class=\"form-group topMargin\"><label for=\"todoInput\">Todo *</label><input value.bind=\"todoObj.todo\" type=\"text\" class=\"form-control\" id=\"todoInput\" aria-describedby=\"todoHelp\" placeholder=\"Enter ToDo\"> <small id=\"todoHelp\" class=\"form-text text-muted\">A short name for the ToDo.</small></div>        <div class=\"form-group\">            <label for=\"descriptionInput\">Description</label>            <textarea value.bind=\"todoObj.description\" type=\"text\" class=\"form-control\" id=\"descriptionInput\" aria-describedby=\"descriptionHelp\" placeholder=\"Enter Description\"></textarea>             <small id=\"descriptionHelp\" class=\"form-text text-muted\">A longer description if required.</small>         </div><div class=\"form-group\">            <label for=\"priorityInput\">Priority</label>            <select value.bind=\"todoObj.priority\" class=\"form-control\" id=\"exampleFormControlSelect2\">                <option repeat.for=\"priority of priorities\" value.bind=\"priority\"> ${priority}</option>            </select>            <small id=\"priorityHelp\" class=\"form-text text-muted\">How urgent is this?</small>         </div>               <div class=\"form-group\">            <label for=\"dueDateInput\">Due Date *</label>            <flat-picker value.bind=\"todoObj.dateDue\"></flat-picker>            <small id=\"dueDateHelp\" class=\"form-text text-muted\">The date to ToDo is due.</small>         </div>  <div class=\"row\"><div class=\"col\"><label class=\"btn btn-secondary\">Browse for files&hellip; <input type=\"file\" style=\"display:none\" change.delegate=\"changeFiles()\" files.bind=\"files\"></label><small id=\"fileHelp\" class=\"form-text text-muted\">Upload any files that will be useful.</small></div><div class=\"col-8\"><ul><li repeat.for=\"file of filesToUpload\" class=\"list-group-item\"> ${file.name}<span click.delegate=\"removeFile($index)\" class=\"pull-right\"><i class=\"fa fa-trash\" aria-hidden=\"true\"></i></span></li></ul></div></div>        <button click.trigger=\"saveTodo()\" class=\"btn btn-primary topMargin\">Save</button>     </form></template>"; });
-define('text!modules/components/todoList.html', ['module'], function(module) { module.exports = "<template>    <div class=\"card topMargin\">        <div class=\"card-body\">            <div class=\"row\">                <span class=\"col\">                    <span class=\"rightMargin pull-right\"><i click.trigger=\"logout()\" class=\"fa fa-sign-out fa-lg\" aria-hidden=\"true\">Logout</i></span>       <span class=\"leftMargin pull-left\"><i click.trigger=\"createTodo()\" class=\"fa fa-plus fa-lg\" aria-hidden=\"true\">Create ToDo</i></span>                 </span>            </div>        </div>    </div><div show.bind=\"todos.todosArray.length\"> <span class=\"col\">        <div class=\"form-check\">            <label class=\"form-check-label\">                <input change.trigger=\"toggleShowCompleted()\" type=\"checkbox\" class=\"form-check-input\">                 Show completed             </label>        </div>    </span><table class=\"table\"><thead><tr><th>ToDo</th><th>Due Date</th><th>Priority</th><th>File</th><th>Edit</th></tr></thead><tbody><tr class=\"${todo.priority === 'Critical' ? 'table-secondary' : ' '} \" repeat.for=\"todo of todos.todosArray | completed:showCompleted\"><td>${todo.todo}</td><td>${todo.dateDue | dateFormat}</td><td>${todo.priority}</td><td><a href=\"http://localhost:5000/uploads/${user._id}/${todo.file.filename}\" target=\"_blank\">${todo.file.originalName}</a></td><td><i click.trigger=\"editTodo(todo)\" class=\"fa fa-pencil rightMargin\" aria-hidden=\"true\"></i> <i click.trigger=\"deleteTodo(todo)\" class=\"fa fa-trash rightMargin\" aria-hidden=\"true\"></i> <i show.bind=\"!todo.completed\" click.trigger=\"completeTodo(todo)\" class=\"fa fa-square-o\" aria-hidden=\"true\"></i> <i show.bind=\"todo.completed \" click.trigger=\"completeTodo(todo)\" class=\"fa fa-check\" aria-hidden=\"true \"></i></td></tr></tbody></table></div><div show.bind=\"!todos.todosArray.length\"><h2>Apparently, you don't have anything to do!</h2><span class=\"col\">   <span class=\"rightMargin pull-right\"><i click.trigger=\"logout()\" class=\"fa fa-sign-out fa-lg\" aria-hidden=\"true\"></i></span>    <span class=\"rightMargin pull-right\"><i click.trigger=\"createTodo()\" class=\"fa fa-plus fa-lg\" aria-hidden=\"true\"></i></span></span></div></template>"; });
+define('text!modules/components/todoList.html', ['module'], function(module) { module.exports = "<template>    <div class=\"card topMargin\">        <div class=\"card-body\">            <div class=\"row\">                <span class=\"col\">                    <span class=\"rightMargin pull-right\"><i click.trigger=\"logout()\" class=\"fa fa-sign-out fa-lg\" aria-hidden=\"true\">Logout</i></span>       <span class=\"leftMargin pull-left\"><i click.trigger=\"createTodo()\" class=\"fa fa-plus fa-lg\" aria-hidden=\"true\">Create ToDo</i></span>                 </span>            </div>        </div>    </div><div show.bind=\"todos.todosArray.length\"> <span class=\"col\">        <div class=\"form-check\">            <label class=\"form-check-label\">                <input change.trigger=\"toggleShowCompleted()\" type=\"checkbox\" class=\"form-check-input\">                 Show completed             </label>        </div>    </span><table class=\"table\"><thead><tr><th>ToDo</th><th>Due Date</th><th>Priority</th><th>File</th><th>Edit</th></tr></thead><tbody><tr class=\"${todo.priority === 'Critical' ? 'table-secondary' : ' '} \" repeat.for=\"todo of todos.todosArray | completed:showCompleted\"><td>${todo.todo}</td><td>${todo.dateDue | dateFormat}</td><td>${todo.priority}</td><td><a href=\"uploads/${user._id}/${todo.file.filename}\" target=\"_blank\">${todo.file.originalName}</a></td><td><i click.trigger=\"editTodo(todo)\" class=\"fa fa-pencil rightMargin\" aria-hidden=\"true\"></i> <i click.trigger=\"deleteTodo(todo)\" class=\"fa fa-trash rightMargin\" aria-hidden=\"true\"></i> <i show.bind=\"!todo.completed\" click.trigger=\"completeTodo(todo)\" class=\"fa fa-square-o\" aria-hidden=\"true\"></i> <i show.bind=\"todo.completed \" click.trigger=\"completeTodo(todo)\" class=\"fa fa-check\" aria-hidden=\"true \"></i></td></tr></tbody></table></div><div show.bind=\"!todos.todosArray.length\"><h2>Apparently, you don't have anything to do!</h2><span class=\"col\">   <span class=\"rightMargin pull-right\"><i click.trigger=\"logout()\" class=\"fa fa-sign-out fa-lg\" aria-hidden=\"true\"></i></span>    <span class=\"rightMargin pull-right\"><i click.trigger=\"createTodo()\" class=\"fa fa-plus fa-lg\" aria-hidden=\"true\"></i></span></span></div></template>"; });
 define('text!resources/elements/flatpickr.html', ['module'], function(module) { module.exports = "<template>    <require from=\"flatpickr/flatpickr.css\"></require>    <div class=\"input-group aurelia-flatpickr\">        <input type=\"text\" class=\"aurelia-flatpickr form-control flatPicker\" data-input>     </div></template>"; });
 //# sourceMappingURL=app-bundle.js.map
